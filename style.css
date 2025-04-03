@@ -19,7 +19,7 @@ body{
         width: 200px; /* Increase the size */
         height: 200px; /* Match increased size */
         border-radius: 50%; /* Circle shape */
-        border: 5px solid #4caf50; /* Green border for styling */
+        border: 5px solid #6f0ae2; 
         overflow: hidden;
         display: flex;
         justify-content: center; /* Center content horizontally */
@@ -70,7 +70,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #6f0ae2;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -89,7 +89,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .header-text p span{
-    color: #ff004f;
+    color: #6f0ae2;
 }
 /*-----------About section------------*/
 #about{
@@ -135,7 +135,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #6f0ae2;
     position: absolute;
     left: 0;
     bottom: -8px;
