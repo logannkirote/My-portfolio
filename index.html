@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logan logo.png" class="logo">
+                <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    
+                <ul class="menu">
+            
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div id="profile-picture">
+                    <img src="images/Myimage.jpg" alt="Profile Picture">
+                </div>
+            </nav>
+            
+            <div class="header-text">
+                <h1>MY PORTFOLIO</h1>
+                <P>Hi, am <span>Logan Nkirote</span><br>From Meru,Kenya.</P>
+            </div>
+        </div>
+
+    </div>
+    <!---------about me --------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                   
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p> Am a passionate web developer.<br> And am an Information Technology student at University of Embu</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces.</li>
+                            <li><span>Web Development</span><br>Developing functionate website.</li>
+                            <li><span>App Development</span><br>Developing a user friendly App.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 May</span><br>Network admnistration at Marimanti General Hospital(volunteering).</li>
+                            <li><span>2024 September</span><br>Developing an E-commerce website.</li>
+                            <li><span>2025 January</span><br>Designing App interfaces.</li>
+                            <li><span>2025 March</span><br>Developing a beauty app.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2006-2018</span><br>St.John's Boarding primary school.</li>
+                            <li><span>2018-2022</span><br>Materi Girls High School.</li>
+                            <li><span>2022-current</span><br>University Of Embu</li>
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------Services--------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                
+                    <h2>Web Development</h2>
+                    <p>I can create a frontend website and still learning to do backened website Development.</p>
+                    <a href="https://logannkirote.github.io/LASHYKIDS/">Learn more</a>
+                </div>
+                <div>
+                    
+                    <h2>UI/UX</h2>
+                    <p>I can design the user interface according to the user inferences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                
+                    <h2>App Development</h2>
+                    <p>I can create an friendly user app.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!---------portfolio------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/beautywise.jpg">
+                     <div class="layer">
+                        <h3>App design</h3>
+                        <p>This design make the app attractive for the user.</p>
+                    </div>                    
+                </div>
+                <div class="work">
+                    <img src="images/web.jpg">
+                    <div class="layer">
+                        <h3> E-commerce Web</h3>
+                        <p>This is a frontend website where the user can add the items to cart.</p>
+                        <button><a href="https://logannkirote.github.io/LASHYKIDS/">EXPLORE</a></button>
+                    </div> 
+                </div>
+                <div class="work">
+                    <img src="images/app.jpg">
+                    <div class="layer">
+                        <h3>Beauty App </h3>
+                        <p>This App enables the user to scan face and be given the recommendations.</p>
+                    </div> 
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!---------contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+             
+                <br>
+                <br>
+                <ul>
+                    <li><i class="fa fa-whatsapp"></i> <a href="https://wa.me/+254757464234" target="_blank">+254757464234</a></li>
+                    <br>
+                    <br>
+                    <li><i class="fa fa-phone"></i> <a href="tel:+254757464234">+254757464234</a></li>
+                    <br>
+                    <br>
+                    <li><i class="fa fa-instagram"></i> <a href="https://www.instagram.com/loganmutuma" target="_blank">@loganmutuma</a></li>
+                    <br>
+                </ul>
+            
+            
+                <a href="images/Logan Mutuma Nkirote CV.pdf" download class="button">Download CV</a>
+                </div>
+                
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <br>
+                        <br>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <br>
+                        <br>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <br>
+                        <br>
+                        <button type="submit">SUBMIT</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-------------footer------------->
+    <footer>
+        <p>© 2025 Logan Mutuma. All Rights Reserved.</p>
+    </footer>
+    
+
+
+
+
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    if (menu.style.display === 'flex') {
+        menu.style.display = 'none'; // Hide menu
+    } else {
+        menu.style.display = 'flex'; // Show menu
+    }
+}
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbypsDars3ifZTcwm0mIw-L3n68hkXa9YOQy0QXzYmpSNcw4FzxeZppopVXurcI0F4Pf3g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>

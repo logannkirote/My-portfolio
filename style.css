@@ -1,0 +1,493 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+
+.container{
+    padding: 10px 10%;
+}
+#profile-picture {
+        width: 200px; /* Increase the size */
+        height: 200px; /* Match increased size */
+        border-radius: 50%; /* Circle shape */
+        border: 5px solid #4caf50; /* Green border for styling */
+        overflow: hidden;
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        margin: 40px auto; /* Center align with space above and below */
+    }
+#profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the circle proportionally */
+}
+
+
+
+#profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Keeps the image proportionate */
+}
+nav{
+    display: flex;
+    justify-content: flex-end; /* Align menu items to the right */
+    align-items: center; /* Center align menu vertically */
+    flex-wrap: wrap;
+    position: relative; /* Allows precise placement */
+    margin-bottom: 30px; /* Space below nav for profile picture */
+}
+nav ul {
+    list-style: none;
+    display: flex; /* Horizontal layout for menu links */
+    margin-right: 20px; /* Add space between the menu and the profile picture */
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 25%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 50px;
+    margin-top: 30px;
+}
+.header-text p span{
+    color: #ff004f;
+}
+/*-----------About section------------*/
+#about{
+    padding: 80px 0;
+    color: #ababab;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+        width: 100%; /* Adjusts the width to fit its container */
+        height: auto; /* Maintains the aspect ratio */
+        border-radius: 15px; /* Gives the image rounded corners */
+        object-fit: cover; /* Ensures the image scales properly */
+    }
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+.tab-links.active-link::after{
+    width: 50%;
+
+
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.tab-contents ul li span{
+    color: #910e0e;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/*--------services---------*/
+#services{
+    padding: 30px 0;
+
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+
+}
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+
+}
+/*-------portfolio-----*/
+#portfolio{
+    padding: 50px 0;
+
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s; ;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.work:hover img{
+    transform:scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.work button {
+    background-color: #b3ff00; 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s, transform 0.3s; 
+    margin-bottom: 20px;
+}
+
+.work button:hover {
+    background-color: #16040a; 
+    transform: scale(1.1); 
+}
+/*--------contact----------*/
+#contact {
+    background: linear-gradient(to bottom, #1a1114, #4b004e); 
+    padding: 40px 20px; 
+    border-radius: 10px; 
+    color: white; 
+}
+#contact .container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+}
+.contact-left {
+    width: 45%; 
+}
+
+.contact-right {
+    width: 45%; 
+}
+ul {
+    list-style: none; 
+    padding: 0;
+    margin-top: 20px; 
+}
+ul li {
+    margin-bottom: 15px; 
+    font-size: 16px; 
+    color: white;
+    transition: color 0.3s, transform 0.3s;
+ 
+}
+ul li:hover {
+    color: #ffcc00; 
+    transform: scale(1.05); 
+}
+ul li a {
+    color: white;
+    text-decoration: none; 
+    transition: color 0.3s, text-decoration 0.3s; 
+}
+
+ul li a:hover {
+    color: #ffcc00;  
+}
+
+.contact-right form {
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%; 
+    padding: 15px; 
+    margin-bottom: 15px; 
+    font-size: 18px; 
+    border: 1px solid #ff004f;
+    border-radius: 5px; 
+    background: #fff; 
+    color: #333; 
+}
+textarea {
+    height: 150px; 
+}
+button[type="submit"] {
+    width: 100%;
+    padding: 15px; 
+    font-size: 18px; 
+    background-color: #ff004f; 
+    color: #fff; 
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, background-color 0.3s; 
+}
+
+button[type="submit"]:hover {
+    button[type="submit"]:hover {
+        background-color: #e60045; 
+        transform: scale(1.1); 
+    }
+}
+.button{
+    width: 100%;
+    padding: 15px; 
+    font-size: 18px; 
+    background-color: #ff004f; 
+    color: #fff; 
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, background-color 0.3s
+
+}
+.button:hover{
+    background-color: #e60045; 
+    transform: scale(1.1); 
+
+}
+/*--------footer----------*/
+footer p {
+    text-align: center; 
+    font-size: 14px; 
+    color: #888; 
+    margin: 20px 0; 
+}
+/*----------small screen----------*/
+@media only screen and (max-width: 600px) {
+    /* General body styling */
+    body {
+        font-size: 14px; /* Reduce overall font size for readability */
+    }
+
+    .container {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    /* Navigation adjustments */
+    nav {
+        flex-direction: column; /* Stack menu and profile picture vertically */
+        align-items: center; /* Center-align menu and profile picture */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack menu links vertically */
+        margin-top: 20px; /* Space above the menu */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add vertical spacing for menu items */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .menu-icon {
+        font-size: 30px; /* Hamburger icon size */
+        color: white; /* Icon color */
+        position: absolute;
+        top: 10px; /* Position at top-right corner */
+        right: 20px;
+    }
+
+    /* Profile picture adjustments */
+    #profile-picture {
+        width: 150px; /* Shrink profile picture size */
+        height: 150px; /* Match width for circular shape */
+        margin: 20px auto; /* Space around picture and center-align */
+        border-radius: 50%; /* Circular shape remains intact */
+    }
+
+    /* Header text adjustments */
+    .header-text {
+        margin-top: 10%;
+        text-align: center; /* Center-align text for smaller screens */
+    }
+
+    .header-text h1 {
+        font-size: 24px; /* Reduce title size */
+    }
+
+    .header-text p {
+        font-size: 16px; /* Adjust paragraph size */
+    }
+
+    /* About section adjustments */
+    #about .row {
+        flex-direction: column; /* Stack About content vertically */
+        text-align: center; /* Center text for readability */
+    }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%; /* Full width for each column */
+        margin-bottom: 20px; /* Space between stacked sections */
+    }
+
+    /* Services list adjustments */
+    .services-list {
+        grid-template-columns: 1fr; /* Single column layout for services */
+    }
+
+    /* Portfolio adjustments */
+    .work-list {
+        grid-template-columns: 1fr; /* Single column layout for portfolio items */
+    }
+
+    /* Contact section adjustments */
+    #contact .container {
+        flex-direction: column; /* Stack contact info and form vertically */
+    }
+
+    .contact-left, .contact-right {
+        width: 100%; /* Full width for both sections */
+        margin-bottom: 20px; /* Space between stacked sections */
+    }
+
+    ul li {
+        font-size: 14px; /* Adjust contact info font size */
+    }
+
+    /* Button adjustments */
+    button[type="submit"], .button {
+        font-size: 14px; /* Adjust button text size */
+        padding: 10px; /* Adjust padding for buttons */
+    }
+
+    footer p {
+        font-size: 12px; /* Reduce footer text size */
+    }
+}
+#msg{
+    color:#61b752;
+    display: block;
+}
